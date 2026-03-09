@@ -48,21 +48,26 @@ SPECTACULAR_SETTINGS = {
 # Application definition
 
 INSTALLED_APPS = [
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.categories',    
-    'apps.medicaments',    
-    'apps.ventes',       
+    'rest_framework',
+    'drf_spectacular',
     'django_filters',
-     'rest_framework',
-    'drf_spectacular',   
+    'apps.categories.apps.CategoriesConfig',
+    'apps.medicaments.apps.MedicamentsConfig',
+    'apps.ventes.apps.VentesConfig',
+    'corsheaders',
 ]
 
+
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -123,6 +128,11 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+]
+
 
 
 # Internationalization
