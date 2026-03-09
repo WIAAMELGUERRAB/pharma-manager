@@ -1,0 +1,15 @@
+[
+  {"model": "categories.categorie", "pk": 1, "fields": {"nom": "Antibiotique", "description": "Médicaments anti-infectieux"}},
+  {"model": "categories.categorie", "pk": 2, "fields": {"nom": "Antalgique", "description": "Médicaments contre la douleur"}},
+  {"model": "categories.categorie", "pk": 3, "fields": {"nom": "Antihypertenseur", "description": "Médicaments pour la tension"}},
+  {"model": "medicaments.medicament", "pk": 1, "fields": {
+    "nom": "Amoxicilline", "dci": "amoxicilline", "categorie": 1,
+    "forme": "Comprimé", "dosage": "500mg", "prix_achat": "15.00", "prix_vente": "22.50",
+    "stock_actuel": 5, "stock_minimum": 20, "date_expiration": "2026-12-31",
+    "ordonnance_requise": true, "est_actif": true}},
+  {"model": "medicaments.medicament", "pk": 2, "fields": {
+    "nom": "Paracétamol", "dci": "paracétamol", "categorie": 2,
+    "forme": "Comprimé", "dosage": "1000mg", "prix_achat": "5.00", "prix_vente": "8.50",
+    "stock_actuel": 100, "stock_minimum": 20, "date_expiration": "2027-06-30",
+    "ordonnance_requise": false, "est_actif": true}}
+]
