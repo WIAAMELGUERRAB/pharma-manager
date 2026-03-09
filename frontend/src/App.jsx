@@ -4,9 +4,9 @@ import MedicamentsPage from './pages/MedicamentsPage';
 import VentesPage      from './pages/VentesPage';
 
 const PAGES = {
-  dashboard:   { label: '📊 Dashboard',    component: <DashboardPage /> },
-  medicaments: { label: '💊 Médicaments',  component: <MedicamentsPage /> },
-  ventes:      { label: '🛒 Ventes',       component: <VentesPage /> },
+  dashboard:   { label: ' Dashboard',    component: <DashboardPage /> },
+  medicaments: { label: ' Médicaments',  component: <MedicamentsPage /> },
+  ventes:      { label: ' Ventes',       component: <VentesPage /> },
 };
 
 export default function App() {
